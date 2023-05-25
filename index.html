@@ -1,0 +1,140 @@
+<!-- Explicacion de que es una etiqueta??
+<etiqueta atributo="valor">Texto o Datos</etiqueta> Las etiquetas cumplen una funcion y/o una accion
+
+<strong>Hola mundo desde HTML!!</strong>
+
+<h3> Hola mundo 2</h3>
+ -->
+ <!--Estructura correcta para un file HTML-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Mi primera web</title>
+    </head>
+    <body>
+        <!--Analizando etiquetas para textos-->
+        <h1>Titulo de mi web</h1>
+        <h2>Bienvenidos a mi web</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Curabitur quis malesuada est, sed dignissim magna. Proin ut sagittis lectus. 
+            Morbi vulputate est augue. Fusce sit amet tortor turpis. 
+            Pellentesque fringilla massa felis, dictum maximus nisl viverra sed. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+            In lorem augue, fringilla nec imperdiet a, tincidunt nec nibh. 
+            Praesent ornare risus vel interdum blandit. 
+            Quisque pretium lectus vel metus porttitor, non pulvinar quam interdum.
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Curabitur quis malesuada est, sed dignissim magna. Proin ut sagittis lectus. 
+            Morbi vulputate est augue. Fusce sit amet tortor turpis. 
+            Pellentesque fringilla massa felis, dictum maximus nisl viverra sed. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.<br/><br/>
+            In lorem augue, fringilla nec imperdiet a, tincidunt nec nibh. 
+            Praesent ornare risus vel interdum blandit. 
+            Quisque pretium lectus vel metus porttitor, non pulvinar quam interdum.
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Curabitur quis malesuada est, sed dignissim magna. Proin ut sagittis lectus. 
+            Morbi vulputate est augue. Fusce sit amet tortor turpis. 
+            Pellentesque fringilla massa felis, dictum maximus nisl viverra sed. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+            In lorem augue, fringilla nec imperdiet a, tincidunt nec nibh. 
+            Praesent ornare risus vel interdum blandit. 
+            Quisque pretium lectus vel metus porttitor, non pulvinar quam interdum.
+        </p>
+
+        <hr/>
+        <!--Colocar imagenes-->
+            <h2>Imagenes en HTML</h2>
+            <img src="imagenes/perro.webp" alt="Imagen de un perro" title="Foto de perro" width="455px"/>
+        <hr/>
+
+        <h3>tercer encabezado de la pagina</h3>
+         <p>
+            Lorem ipsum dolor sit amet, <strong> consectetur adipiscing elit. </strong>
+            Curabitur quis malesuada est, sed dignissim magna. Proin ut sagittis lectus. 
+            Morbi vulputate est augue. <em> sit amet tortor turpis. </em>
+            Pellentesque fringilla massa felis, dictum maximus nisl viverra sed. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            <blockquote>
+            In lorem augue, fringilla nec imperdiet a, tincidunt nec nibh. 
+            Praesent ornare risus vel interdum blandit. 
+            Quisque pretium lectus vel metus porttitor, <i>non pulvinar quam interdum.</i>
+            </blockquote>
+        </p>
+        <!--Existe la etiqueta <span> </span> que se utiliza aplicando CSS para dar estilos al texto
+        ej. <span id="resaltado" class="rojo amarillo"> Texto al cual va aplicado el estilo</span>-->
+        
+        <!--Trabajando con formularios-->
+        <h3>Formulario</h3>
+        <form>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Escribe tu nombre..."/>
+            </p>
+            <p>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion"></textarea>
+            </p>
+
+            <input type="radio" name="genero" value="hombre"> Hombre <br/>
+            <input type="radio" name="genero" value="mujer"> Mujer <br/>
+            <input type="radio" name="genero" value="nada"> Nada <br/>
+
+            <select name="sexo">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="nada">Nada</option>
+            </select>
+
+            <input type="submit" value="Enviar formulario"/>
+        </form>
+
+        <!--Como hacer listas-->
+        <h3>Listado de Frutas</h3>
+            <!--Lista ordenada-->
+            <ol>
+                <li>Manzana</li>
+                <li>Naranja</li>
+                <li>Pera</li>
+                <li>Sandia</li>
+            </ol>
+             <!--Lista desordenada-->
+             <ul>
+                <li>Manzana
+                    <ul>
+                        <li>Roja</li>
+                        <li>Verde</li>
+                    </ul>
+                </li>
+                <li>Naranja</li>
+                <li>Pera</li>
+                <li>Sandia</li>
+            </ul>
+        
+        <!--Trabajando con tablas-->
+        <h3>Tablas</h3>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Pais</th>
+            </tr>
+            <tr>
+                <td>Diana</td>
+                <td>Garcia</td>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Kevin</td>
+                <td colspan="2">Lopez</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>
